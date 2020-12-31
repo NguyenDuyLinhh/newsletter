@@ -1,0 +1,284 @@
+body {
+	font-family: 'Dosis';
+	font-size: 16px;
+    line-height: 1.5;
+    color: #9d9d9d;
+}
+/*---------- STYLE HEADER ----------*/
+a.logo img {
+    width: 200px !important;
+    height: 74.8px !important;
+    object-fit: cover !important;
+}
+.logo-phone {
+	width: 1340px;
+	margin: 0px auto;
+}
+.number-phone i {
+	font-size: 30px;
+	color: #2b2b2b;
+	position: absolute;
+	top: 23%;
+	left: -35%
+}
+.number-phone p {
+	font-size: 16px;
+	font-weight: 500;
+	color: #2b2b2b;
+}
+@media (max-width: 1370px) {
+	.logo-phone {
+		max-width: 100%;
+	}
+}
+/*---------- STYLE CONTENT ----------*/
+.content {
+	background-color: #f5f7f8;
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+}
+.content .container {
+	position: relative;
+	height: 600px;
+	width: 960px !important;
+	margin: 0px auto;
+	box-shadow: 0px 15px 50px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+.content .container .user {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.content .container .user .imgBx {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	transition: 0.5s;
+}
+.content .container .user .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.content .container .user .formBx {
+	position: relative;
+	width: 50%;
+	/*height: 100%*/
+	padding: 50px !important;
+	transition: 0.5s;
+}
+.content .container .user .formBx form h2 {
+	font-size: 20px;
+	font-weight: 600;
+	font-family: 'Dosis';
+	letter-spacing: 2px;
+}
+.content .container .user .formBx form .form-group input {
+	position: relative;
+	width: 100%;
+	font-family: 'Dosis';
+	font-weight: 500;
+	color: black;
+	letter-spacing: 1.5px;
+	padding: 20px 10px;
+	border: 2px solid #f5f7f8;
+	box-shadow: none;
+}
+.content .container .user .formBx form button {
+	font-weight: 500;
+	font-family: 'Dosis';
+	letter-spacing: 1.5px;
+	background-color:  #a4a3a3;
+	padding: 10px 0px;
+}
+.content .container .user .formBx form button:hover {
+	background: #333;
+}
+.content .container .user .formBx form p {
+	color: #918c8c;
+	font-size: 16px;
+	font-family:'Dosis';
+	letter-spacing: 1.5px;
+	margin-top: 20px;
+}
+.content .container .user .formBx .fb-gg a {
+	border: 2px solid black;
+    padding: 8px 45px;
+    font-weight: 500;
+}
+.content .container .user .formBx .fb-gg a i {
+	font-size: 22px;
+}
+.content .container .user .formBx .fb-gg a.fb {
+	color: #4267B2;
+}
+.content .container .user .formBx .fb-gg a.fb:hover {
+	background: #4267B2;
+	color: #fff;                
+}
+.content .container .user .formBx .fb-gg a.gg {
+	color: #EA4335;
+}
+.content .container .user .formBx .fb-gg a.gg:hover {
+	background: #EA4335;
+	color: #fff;
+}
+.content .container .user .formBx form .signup {
+	position: relative;
+	margin-top: 25px;
+	font-size: 12px;
+	font-family: 'Dosis';
+	color: #555;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+}
+.content .container .user .formBx form .signup a:hover {
+	text-decoration: none;
+}
+.content .container .signinBx {
+	pointer-events: none;
+}
+.content .container.active .signinBx {
+	pointer-events: initial;
+}
+.content .container .signinBx .formBx {
+	left: 100%;
+}
+.content .container.active .signinBx .formBx {
+	left: 0;
+} 
+.content .container .signinBx .imgBx {
+	left: -100%;
+}
+.content .container.active .signinBx .imgBx {
+	left: 0;
+}
+.content .container .signupBx .formBx {
+	left: 0;
+}
+.content .container.active .signupBx .formBx {
+	left: 100%
+}
+.content .container .signupBx .imgBx {
+	left: 0;
+}
+.content .container.active .signupBx .imgBx {
+	left: -100%;
+}
+@media (max-width: 1030px) {
+	.content .container {
+		width: 480px !important;
+	}
+	.content .container .user .imgBx {
+		display: none;
+	}
+	.content .container .user .formBx {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 524px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 44px;
+	}
+} 
+@media (max-width: 520px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 43px;
+	}
+} 
+@media (max-width: 516px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 42px;
+	}
+} 
+@media (max-width: 512px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 41px;
+	}
+} 
+@media (max-width: 508px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 40px;
+	}
+} 
+@media (max-width: 504px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 39px;
+	}
+} 
+@media (max-width: 500px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 38px;
+	}
+} 
+@media (max-width: 494px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 37px;
+	}
+} 
+@media (max-width: 490px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 36px;
+	}
+} 
+@media (max-width: 486px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 35px;
+	}
+} 
+@media (max-width: 482px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 34px;
+	}
+} 
+@media (max-width: 478px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 33px;
+	}
+} 
+@media (max-width: 474px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 32px;
+	}
+} 
+@media (max-width: 470px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 31px;
+	}
+} 
+@media (max-width: 466px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 30px;
+	}
+} 
+@media (max-width: 462px) {
+	.content .container .user .formBx .fb-gg a {
+		padding: 8px 29px;
+	}
+} 
+/*---------- STYLE FOOTER ----------*/
+.footer {
+	height: 75px;
+}
+.footer p a:hover {
+	text-decoration: none;
+}
+.footer p {
+	line-height: 80px;
+	color: #2b2b2b;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
